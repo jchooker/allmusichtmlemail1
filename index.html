@@ -7,6 +7,9 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Norman Mailer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style type="text/css">
         body {
             margin: 0;
@@ -54,6 +57,31 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
             max-width: 300px;
             text-align: center;
         }
+        /* .text-col-1 {
+            max-width: 25%;
+        } */
+        .text-col-1 p {
+            font-family: 'Red Hat Display', sans-serif;
+        }
+        .three-columns {
+            text-align: center;
+            font-size: 0; /*<--makes paragraph text disappear, which needs to be addressed later!*/
+            padding: 15px 0 25px;
+        }
+        .three-columns .column {
+            text-align: center;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;    
+        }
+        .three-columns .padding {
+            padding: 15px;
+        }
+        .three-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+        }
     </style>
 </head>
 <body>
@@ -74,7 +102,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                         <tr>
                             <td class="two-columns">
 
-                                <table class="column" style="padding: 0 0 15px;">
+                                <table class="column">
                                     <tr>
                                         <td style="padding: 0 62px 10px;">
                                             <a href="https://allmusic.com"><img src="./imgs/allmusic1.png" 
@@ -84,21 +112,21 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                                 </table>
                                 <table class="column">
                                     <tr>
-                                        <td>
+                                        <td style="padding: 10px 72px;">
                                             <a href="#">
                                                 <img src="./imgs/fb-bw-logo.png" alt="fb-bw-logo" width="30px">
                                             </a>
                                             <a href="#">
-                                                <img src="./imgs/tw-bw-logo.png" alt="tw-bw-logo" width="30px">
+                                                <img src="./imgs/tw-bw-logo.png" alt="tw-bw-logo" width="30px" style="margin-left: 4px;">
                                             </a>
                                             <a href="#">
-                                                <img src="./imgs/yt-bw-logo.png" alt="yt-bw-logo" width="30px">
+                                                <img src="./imgs/yt-bw-logo.png" alt="yt-bw-logo" width="30px" style="margin-left: 4px;">
                                             </a>
                                             <a href="#">
-                                                <img src="./imgs/ig-bw-logo.png" alt="ig-bw-logo" width="30px">
+                                                <img src="./imgs/ig-bw-logo.png" alt="ig-bw-logo" width="30px" style="margin-left: 4px;">
                                             </a>
                                             <a href="#">
-                                                <img src="./imgs/li-bw-logo.png" alt="li-bw-logo" width="30px">
+                                                <img src="./imgs/li-bw-logo.png" alt="li-bw-logo" width="30px" style="margin-left: 4px;">
                                             </a>
                                         </td>
                                     </tr>
@@ -110,7 +138,71 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                 </td>
             </tr>
             <!--BANNER IMAGE-->
+            <tr>
+                <td>
+                    <a href="#">
+                        <img src="./imgs/nye23.png" alt="NYE-Concert" width="600px" style="max-width: 100%;"> <!--max width of 100% not 600-->
+                    </a>                                                                                    <!--or it will not scale down-->
+                </td>                                                                                       <!--on mobile-->
+            </tr>
             <!--THREE COLUMN SECTION-->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="three-columns">
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="./imgs/globe.png" alt="Globe" width="130px" style="max-width: 130px;"></img></a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-col-1">
+                                                    <td>
+                                                        <p style="font-weight: bold; font-size: 17px">Nurture Your Tastes</p>
+                                                        <p style="text-align: center;">We find emotional and stylistic commonalities across genres to increase your
+                                                            exposure to new music.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="./imgs/ppl-share.png" alt="PPl-Share" width="130px" style="max-width: 130px;"></img></a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-col-1">
+                                                    <td>
+                                                        <p style="font-weight: bold; font-size: 17px">Socialize</p>
+                                                        <p style="text-align: center;">The best means of sharing is social - and sometimes
+                                                            leads you to artists that escape easy categorization.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="./imgs/tomes.png" alt="Tomes" width="130px" style="max-width: 130px;"></img></a>
+                                                    </td>
+                                                </tr>
+                                                <tr class="text-col-1">
+                                                    <td>
+                                                        <p style="font-weight: bold; text-align: center; font-size: 17px">Music: Past and Present</p>
+                                                        <p style="text-align: center;">We don't just keep you connected to music from the past - we keep
+                                                            a finger on the pulse of current musical trends.
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
             <!--TWO COLUMN SECTION-->
             <!--TOP BORDER-->
             
