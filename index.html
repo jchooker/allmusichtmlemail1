@@ -7,9 +7,6 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Norman Mailer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style type="text/css">
         body {
             margin: 0;
@@ -42,7 +39,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
             width: 100%;
             max-width: 600px; /*<--max recommended width for email*/
             border-spacing: 0;
-            font-family: sans-serif;
+            font-family: 'Verdana', sans-serif;
             color: #171a1b
         }
         .two-columns {
@@ -57,11 +54,8 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
             max-width: 300px;
             text-align: center;
         }
-        /* .text-col-1 {
-            max-width: 25%;
-        } */
         .text-col-1 p {
-            font-family: 'Red Hat Display', sans-serif;
+            font-family: 'Verdana', sans-serif;
         }
         .three-columns {
             text-align: center;
@@ -81,6 +75,112 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
         .three-columns .content {
             font-size: 15px;
             line-height: 20px;
+        }
+        .col-2-b {
+            /* background-color: #26292B; */
+            background: linear-gradient(227deg, #26292b, #5a5f63, #bdc7cc);
+            color: #ffffff;
+        }
+        .featurette {
+            color: #ffffff;
+            font-family: 'Verdana', sans-serif;
+        }
+        .two-columns.last {
+            padding: 15px 0; /*<---0 padding left-right forces it into two columns*/
+        }
+        .two-columns .padding {
+            padding: 20px;
+        }
+        .two-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+            text-align: left;
+        }   
+        .button {
+            background-color: #ffffff;
+            color: #171a1b;
+            text-decoration: none;
+            border-radius: 4px;
+            padding: 12px 20px;
+            font-weight: bold;
+        }
+        .tan-bkgrd {
+            background-color: #FFFFCC;
+        }
+        .whatcha-row {
+            text-align: center;
+            max-width: 100%;
+            display: flex;
+            padding: 10px 0;
+        }
+        .pre-chaknow {
+            font-family: 'Verdana', sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            padding-left: 40px;
+            margin-bottom: 10px;
+        }
+        .chaknow {
+            font-family: 'Brush Script MT', cursive;
+            color: orange;
+            text-shadow: 4px 9px 2.5px #8B4000;
+            font-size: 70px;
+            line-height: 70px;
+            margin-top: 10px;
+            padding-left: 10px;
+        }
+        .chaknow-td {
+            text-align: center; 
+            padding: 10px 0;
+        }
+        .chaknow-p {
+            font-family: 'Verdana', sans-serif;
+            font-weight: bold;
+            width: 200px;
+            max-width: 200px;
+        }
+        .chaknow-td h1 {
+            line-height: 0.5em;
+        }
+        .bola {
+            width: 260px;
+            max-width: 260px;
+            border-radius: 6px;
+        }
+        .button-dark {
+            background-color: green;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            padding: 12px 20px;
+            font-weight: bold;
+            box-shadow: 1px 1px 4px black;
+        }
+        .column-2 {
+            text-align: left;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+        }
+        .chaknow-p-btn {
+            max-width: 260px;
+        }
+        .chaknow-div {
+            text-align: left !important;
+        }
+        .column-2-left {
+            text-align: left;
+        }
+        /* .tr-gradient {
+            background-image: linear-gradient(to right bottom, #ffffcc, #e7d497, #d1a968, #bc7d40, #a65022);
+        } */
+        .line-height-td p{
+            margin-top: 0;
+        }
+        .no-a {
+            text-decoration: none;
+            color: #ffffff;
         }
     </style>
 </head>
@@ -105,7 +205,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                                 <table class="column">
                                     <tr>
                                         <td style="padding: 0 62px 10px;">
-                                            <a href="https://allmusic.com"><img src="./imgs/allmusic1.png" 
+                                            <a href="https://allmusic.com"><img src="https://i.ibb.co/NtBL6n5/allmusic1.png" 
                                                 alt="allmusic-logo-1" title="allmusic-logo-1" width="180px"></a>
                                         </td>
                                     </tr>
@@ -114,19 +214,19 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                                     <tr>
                                         <td style="padding: 10px 72px;">
                                             <a href="#">
-                                                <img src="./imgs/fb-bw-logo.png" alt="fb-bw-logo" width="30px">
+                                                <img src="https://i.ibb.co/SxprvcR/fb-bw-logo.png" alt="fb-bw-logo" width="30px">
                                             </a>
                                             <a href="#">
-                                                <img src="./imgs/tw-bw-logo.png" alt="tw-bw-logo" width="30px" style="margin-left: 4px;">
+                                                <img src="https://i.ibb.co/SyzZ56S/tw-bw-logo.png" alt="tw-bw-logo" width="30px" style="margin-left: 4px;">
                                             </a>
                                             <a href="#">
-                                                <img src="./imgs/yt-bw-logo.png" alt="yt-bw-logo" width="30px" style="margin-left: 4px;">
+                                                <img src="https://i.ibb.co/X8h0DqM/yt-bw-logo.png" alt="yt-bw-logo" width="30px" style="margin-left: 4px;">
                                             </a>
                                             <a href="#">
-                                                <img src="./imgs/ig-bw-logo.png" alt="ig-bw-logo" width="30px" style="margin-left: 4px;">
+                                                <img src="https://i.ibb.co/grV4bHp/ig-bw-logo.png" alt="ig-bw-logo" width="30px" style="margin-left: 4px;">
                                             </a>
                                             <a href="#">
-                                                <img src="./imgs/li-bw-logo.png" alt="li-bw-logo" width="30px" style="margin-left: 4px;">
+                                                <img src="https://i.ibb.co/FxRnD1k/li-bw-logo.png" alt="li-bw-logo" width="30px" style="margin-left: 4px;">
                                             </a>
                                         </td>
                                     </tr>
@@ -141,7 +241,7 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
             <tr>
                 <td>
                     <a href="#">
-                        <img src="./imgs/nye23.png" alt="NYE-Concert" width="600px" style="max-width: 100%;"> <!--max width of 100% not 600-->
+                        <img src="https://i.ibb.co/ySTTw18/nye23.png" alt="NYE-Concert" width="600px" style="max-width: 100%;"> <!--max width of 100% not 600-->
                     </a>                                                                                    <!--or it will not scale down-->
                 </td>                                                                                       <!--on mobile-->
             </tr>
@@ -157,38 +257,54 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                                             <table class="content">
                                                 <tr>
                                                     <td>
-                                                        <a href="#"><img src="./imgs/globe.png" alt="Globe" width="130px" style="max-width: 130px;"></img></a>
+                                                        <a href="#"><img src="https://i.ibb.co/JRqdwF6/globe.png" alt="Globe" width="130px" style="max-width: 130px;"></img></a>
                                                     </td>
                                                 </tr>
                                                 <tr class="text-col-1">
                                                     <td>
-                                                        <p style="font-weight: bold; font-size: 17px">Nurture Your Tastes</p>
+                                                        <p style="font-weight: bold; font-size: 16px">Nurture Your Tastes</p>
                                                         <p style="text-align: center;">We find emotional and stylistic commonalities across genres to increase your
                                                             exposure to new music.
                                                         </p>
                                                     </td>
                                                 </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
                                                 <tr>
                                                     <td>
-                                                        <a href="#"><img src="./imgs/ppl-share.png" alt="PPl-Share" width="130px" style="max-width: 130px;"></img></a>
+                                                        <a href="#"><img src="https://i.ibb.co/Qrxtp7y/ppl-share.png" alt="PPl-Share" width="130px" style="max-width: 130px;"></img></a>
                                                     </td>
                                                 </tr>
                                                 <tr class="text-col-1">
                                                     <td>
-                                                        <p style="font-weight: bold; font-size: 17px">Socialize</p>
+                                                        <p style="font-weight: bold; font-size: 16px">Spread the Word</p>
                                                         <p style="text-align: center;">The best means of sharing is social - and sometimes
                                                             leads you to artists that escape easy categorization.
                                                         </p>
                                                     </td>
                                                 </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
                                                 <tr>
                                                     <td>
-                                                        <a href="#"><img src="./imgs/tomes.png" alt="Tomes" width="130px" style="max-width: 130px;"></img></a>
+                                                        <a href="#"><img src="https://i.ibb.co/Dz6qVnZ/tomes.png" alt="Tomes" width="130px" style="max-width: 130px;"></img></a>
                                                     </td>
                                                 </tr>
                                                 <tr class="text-col-1">
                                                     <td>
-                                                        <p style="font-weight: bold; text-align: center; font-size: 17px">Music: Past and Present</p>
+                                                        <p style="font-weight: bold; text-align: center; font-size: 16px">Music: Past and Present</p>
                                                         <p style="text-align: center;">We don't just keep you connected to music from the past - we keep
                                                             a finger on the pulse of current musical trends.
                                                         </p>
@@ -204,9 +320,135 @@ TR/xhtml1/DTD/xhtml1-transitional.dtd">
                 </td>
             </tr>
             <!--TWO COLUMN SECTION-->
-            <!--TOP BORDER-->
-            
+            <tr class="col-2-b">
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns last">
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="https://i.ibb.co/qgcwnwC/b52s.jpg" alt="B-52s" width="260px" style="max-width: 260px; font-size: 0;"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <h2 style="font-weight: bold;">Featurette: Icon Alley</h2>
+                                                        <p style="padding-bottom: 16px;">The B-52s' freshman offering had fans screaming "campy" and "exquisite" with
+                                                            the same lungful.
+                                                        </p>
+                                                        <a href="#" class="button">Read More</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!--TITLE, TEXT, AND BUTTON-->
+            <tr style="white-space: normal;">
+                <td style="background-color: #FFFFCC; margin-left: 10px;">
+                    <h1 class="pre-chaknow"><i>Whatcha Know Bout:</i></h1>
+                    <h1 style="font-weight: bold;" class="chaknow">Bossa Nova?</h1>
+                    <img src="https://i.ibb.co/ZT7T4Tw/chevron.png" type="image/svg+xml" style="max-width: 100%;" class="svg-content"></img>
+                </td>
+            </tr>
+            <!---next two column-->
+            <tr class="tr-gradient">
+                <td style="background-color: #FFFFCC; color: #171a1b;">
+                    <table width="100%">
+                        <tr>
+                                <td class="two-columns last">
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding column-2-left">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td>
+                                                            <img src="https://i.ibb.co/gFk2W4Z/bola.jpg" alt="Bola" class="bola" style="box-shadow: 1px 4px 8px black;">
+                                                            <figcaption style="padding-top: 4px;">Bola Sete (1923-1987), Brazilian Guitarist</figcaption>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="column">
+                                        <tr>
+                                            <td class="padding">
+                                                <table class="content">
+                                                    <tr>
+                                                        <td class="chaknow-div">
+                                                            <p class="chaknow-p">Needing a knowledge check? Realizing you got none? All good - 
+                                                                see if you want to learn more about this genre
+                                                                that is such an important cultural artifact of Brazil.
+                                                            </p>
+                                                            <a href="#" class="button-dark">Explore This Genre</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
             <!--FOOTER-->
+            <tr>
+                <td style="background-color: #26292b;">
+                    <table width="100%">
+                        <tr>
+                            <td style="text-align: center; padding: 25px 20px; color: #ffffff" class="line-height-td">
+                                <a href="#">
+                                    <img src="https://i.ibb.co/8KNd99Z/allmusic2.png" alt="allmusic-logo-2" title="allmusic-logo-2" width="100px;">
+                                </a>
+                                <p style="padding: 10px;">Allmusic, Inc.<br>
+                                978 Clef Note Blvd<br>Santa Monica, CA 90404</p>
+                                <div style="vertical-align: middle;">
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/HdPGCbZ/fb-white-logo.png" alt="fb-white-logo" width="30px">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/k6gw7Z1/tw-white-logo.png" alt="tw-white-logo" width="30px" style="margin-left: 4px;">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/BBy0k37/yt-white-logo.png" alt="yt-white-logo" width="30px" style="margin-left: 4px;">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/whVBdX7/ig-white-logo.png" alt="ig-white-logo" width="30px" style="margin-left: 4px;">
+                                    </a>
+                                    <a href="#">
+                                        <img src="https://i.ibb.co/4V5V4CW/li-white-logo.png" alt="li-white-logo" width="30px" style="margin-left: 4px;">
+                                    </a>
+                                </div>
+                                <a href="#" class="no-a">
+                                    <p style="font-size: 16px; margin-top: 20px;">MANAGE SUBSCRIPTION</p>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td height="8" style="background-color: #171a1b;"></td>
+            </tr>
         </table>
     </center>
     
